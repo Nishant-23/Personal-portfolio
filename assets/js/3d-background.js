@@ -11,6 +11,8 @@ class ThreeDBackground {
   }
 
   init() {
+    console.log('Initializing 3D background...');
+    
     // Create scene
     this.scene = new THREE.Scene();
     
@@ -34,7 +36,10 @@ class ThreeDBackground {
     // Add to DOM
     const container = document.getElementById('3d-background');
     if (container) {
+      console.log('3D background container found, adding canvas...');
       container.appendChild(this.renderer.domElement);
+    } else {
+      console.error('3D background container not found!');
     }
     
     // Create computer model
@@ -160,15 +165,23 @@ class ThreeDBackground {
 
 // Initialize 3D background when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM loaded, checking for Three.js...');
+  
   // Load Three.js from CDN if not already loaded
   if (typeof THREE === 'undefined') {
+    console.log('Three.js not found, loading from CDN...');
     const script = document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
     script.onload = () => {
+      console.log('Three.js loaded successfully!');
       new ThreeDBackground();
+    };
+    script.onerror = () => {
+      console.error('Failed to load Three.js from CDN');
     };
     document.head.appendChild(script);
   } else {
+    console.log('Three.js already available!');
     new ThreeDBackground();
   }
 });

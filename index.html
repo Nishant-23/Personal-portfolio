@@ -27,10 +27,7 @@
 
 <body>
 
-  <!--
-    - #3D BACKGROUND
-  -->
-  <div id="3d-background"></div>
+
 
   <!--
     - #MAIN
@@ -47,7 +44,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Nishant Saini" width="80">
+          <spline-viewer url="https://prod.spline.design/8cfb6748-f3dd-44dd-89fb-f46c7ab4186e/scene.splinecode" class="robot-avatar"></spline-viewer>
         </figure>
 
         <div class="info-content">
@@ -1193,9 +1190,9 @@
   <script src="./assets/js/script.js"></script>
   
   <!--
-    - 3d background js link
+    - Spline 3D Robot Background
   -->
-  <script src="./assets/js/3d-background.js"></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.490/build/spline-viewer.js"></script>
 
   <!--
     - ionicon link
