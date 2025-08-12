@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Nishant Saini - Product Manager</title>
 
   <!--
     - favicon
@@ -22,12 +22,10 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-
 
   <!--
     - #MAIN
@@ -48,8 +46,8 @@
             src="https://my.spline.design/8cfb6748-f3dd-44dd-89fb-f46c7ab4186e/" 
             class="robot-avatar"
             frameborder="0"
-            width="80"
-            height="80"
+            width="120"
+            height="120"
             scrolling="no"
             allowfullscreen>
           </iframe>
@@ -57,13 +55,24 @@
 
         <div class="info-content">
           <h1 class="name" title="Nishant Saini">Nishant Saini</h1>
-
           <p class="title">Product Manager</p>
+          <p class="subtitle">Data-driven product strategy & cross-functional leadership</p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/nishant-23" class="social-link" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://linkedin.com/in/thenishantsaini" class="social-link" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="mailto:saini.ni@northeastern.edu" class="social-link">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
+          <span>Contact Info</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -76,97 +85,53 @@
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:saini.ni@northeastern.edu" class="contact-link">saini.ni@northeastern.edu</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-
               <a href="tel:+18573903668" class="contact-link">+1 (857) 390-3668</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
-
               <time datetime="1998-08-15">August 15, 1998</time>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
               <address>Boston, Massachusetts, USA</address>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="logo-github"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">GitHub</p>
-
               <a href="https://github.com/nishant-23" class="contact-link" target="_blank">github.com/nishant-23</a>
             </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/nishant-23" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://linkedin.com/in/thenishantsaini" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="mailto:saini.ni@northeastern.edu" class="social-link">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
           </li>
 
         </ul>
@@ -174,10 +139,6 @@
       </div>
 
     </aside>
-
-
-
-
 
     <!--
       - #main-content
@@ -190,45 +151,33 @@
       -->
 
       <nav class="navbar">
-
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Experience</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Skills</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
-
         </ul>
-
       </nav>
-
-
-
-
 
       <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">About Me</h2>
         </header>
 
         <section class="about-text">
@@ -241,904 +190,288 @@
           </p>
         </section>
 
-
         <!--
           - service
         -->
 
         <section class="service">
-
-          <h3 class="h3 service-title">What I'm doing</h3>
+          <h3 class="h3 service-title">What I Do</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="product strategy icon" width="40">
+                <ion-icon name="analytics-outline"></ion-icon>
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Product Strategy</h4>
-
                 <p class="service-item-text">
                   Developing comprehensive product roadmaps and strategic vision aligned with business objectives.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="data analysis icon" width="40">
+                <ion-icon name="bar-chart-outline"></ion-icon>
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Data Analysis</h4>
-
                 <p class="service-item-text">
                   Leveraging data insights to drive product decisions and optimize user experiences.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="cross-functional collaboration icon" width="40">
+                <ion-icon name="people-outline"></ion-icon>
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Cross-functional Leadership</h4>
-
                 <p class="service-item-text">
                   Leading engineering, design, and business teams to deliver successful products.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="user research icon" width="40">
+                <ion-icon name="search-outline"></ion-icon>
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">User Research</h4>
-
                 <p class="service-item-text">
                   Conducting user research and usability testing to inform product decisions.
                 </p>
               </div>
-
             </li>
 
           </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
         </section>
 
       </article>
 
-
-
-
-
       <!--
-        - #RESUME
+        - #EXPERIENCE
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="experience">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Experience</h2>
         </header>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Northeastern University, Boston, MA</h4>
-
-              <span>December 2025</span>
-
+              <span class="timeline-date">December 2025</span>
               <p class="timeline-text">
                 Master of Science in Engineering Management<br>
                 Relevant Courses: Computation and Visualization for Analytics, Probability and Statistics
               </p>
-
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Vellore Institute of Technology, Vellore, India</h4>
-
-              <span>September 2020</span>
-
+              <span class="timeline-date">September 2020</span>
               <p class="timeline-text">
                 Bachelor of Technology in Mechanical Engineering
               </p>
-
             </li>
 
           </ol>
-
         </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
-
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Work Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Product Manager - Vans Electro-Engineering Pvt Ltd</h4>
-
-              <span>Sept 2022 — Nov 2023</span>
-
-              <p class="timeline-text">
-                • Collaborated with key internal stakeholders to define product specifications for Vacuum Circuit Breakers (VCBs) in the railway sector<br>
-                • Developed data-driven product roadmaps using Tableau and SQL, building business cases for redesign and product innovation<br>
-                • Built executive-level dashboards to monitor project KPIs and track approval timelines, facilitating faster decision-making<br>
-                • Partnered with engineering and R&D teams to prioritize cost-saving opportunities, adding $1.3M in revenue<br>
-                • Leveraged customer feedback data using sentiment analysis, resulting in a 23% increase in customer satisfaction scores
-              </p>
-
+              <span class="timeline-date">Sept 2022 — Nov 2023</span>
+              <ul class="timeline-achievements">
+                <li>Collaborated with key internal stakeholders to define product specifications for Vacuum Circuit Breakers (VCBs) in the railway sector</li>
+                <li>Developed data-driven product roadmaps using Tableau and SQL, building business cases for redesign and product innovation</li>
+                <li>Built executive-level dashboards to monitor project KPIs and track approval timelines, facilitating faster decision-making</li>
+                <li>Partnered with engineering and R&D teams to prioritize cost-saving opportunities, adding $1.3M in revenue</li>
+                <li>Leveraged customer feedback data using sentiment analysis, resulting in a 23% increase in customer satisfaction scores</li>
+              </ul>
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Team Lead-Customer Success - Clear</h4>
-
-              <span>Apr 2021 — Jun 2022</span>
-
-              <p class="timeline-text">
-                • Facilitated Quarterly Business Reviews (QBRs) with CXO and VP-level stakeholders, resulting in a 20% increase in project renewals<br>
-                • Led account management efforts, overseeing a team of 10+ customer success associates driving a 46% performance boost<br>
-                • Fostered strategic client relationships, implementing proactive outreach strategies that increased retention by 15%<br>
-                • Segmented customer feedback to craft targeted strategies, resulting in a 15% increase in user adoption post-onboarding<br>
-                • Analyzed user engagement metrics to identify underutilized features, driving a targeted engagement strategy that increased feature adoption by 25%
-              </p>
-
+              <span class="timeline-date">Apr 2021 — Jun 2022</span>
+              <ul class="timeline-achievements">
+                <li>Facilitated Quarterly Business Reviews (QBRs) with CXO and VP-level stakeholders, resulting in a 20% increase in project renewals</li>
+                <li>Led account management efforts, overseeing a team of 10+ customer success associates driving a 46% performance boost</li>
+                <li>Fostered strategic client relationships, implementing proactive outreach strategies that increased retention by 15%</li>
+                <li>Segmented customer feedback to craft targeted strategies, resulting in a 15% increase in user adoption post-onboarding</li>
+                <li>Analyzed user engagement metrics to identify underutilized features, driving a targeted engagement strategy that increased feature adoption by 25%</li>
+              </ul>
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Product Analyst - NSC Classes</h4>
-
-              <span>Jan 2020 — Apr 2021</span>
-
-              <p class="timeline-text">
-                • Optimized teaching strategies by conducting A/B tests and statistical analyses, leading to a 27% increase in student engagement<br>
-                • Built dashboards in Tableau to track KPIs on student progress, enhancing stakeholder decision-making through data-driven insights<br>
-                • Streamlined support processes by identifying bottlenecks through data analysis, reducing wait times by 38%<br>
-                • Applied predictive analytics models to anticipate student enrollment trends, increasing new registrations by 15% over 1 year<br>
-                • Reduced support tickets by 22% in two months by developing comprehensive self-service resources
-              </p>
-
+              <span class="timeline-date">Jan 2020 — Apr 2021</span>
+              <ul class="timeline-achievements">
+                <li>Optimized teaching strategies by conducting A/B tests and statistical analyses, leading to a 27% increase in student engagement</li>
+                <li>Built dashboards in Tableau to track KPIs on student progress, enhancing stakeholder decision-making through data-driven insights</li>
+                <li>Streamlined support processes by identifying bottlenecks through data analysis, reducing wait times by 38%</li>
+                <li>Applied predictive analytics models to anticipate student enrollment trends, increasing new registrations by 15% over 1 year</li>
+                <li>Reduced support tickets by 22% in two months by developing comprehensive self-service resources</li>
+              </ul>
             </li>
 
           </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Product Strategy</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Analysis & Visualization</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Customer Success & Account Management</h5>
-                <data value="88">88%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 88%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Tools & Technologies</h5>
-                <data value="92">92%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 92%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
         </section>
 
       </article>
 
-
-
-
-
       <!--
-        - #PORTFOLIO
+        - #PROJECTS
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
-
           <ul class="filter-list">
-
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
-
             <li class="filter-item">
               <button data-filter-btn>Product Strategy</button>
             </li>
-
             <li class="filter-item">
               <button data-filter-btn>Data Analysis</button>
             </li>
-
             <li class="filter-item">
               <button data-filter-btn>User Research</button>
             </li>
-
           </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Product Strategy</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Data Analysis</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>User Research</button>
-              </li>
-
-            </ul>
-
-          </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="product strategy">
+            <li class="project-item active" data-filter-item data-category="product strategy">
               <a href="https://github.com/nishant-23" target="_blank">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="logo-github"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-1.jpg" alt="GitHub Projects" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">GitHub Projects</h3>
-
                 <p class="project-category">View My Code</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="data analysis">
+            <li class="project-item active" data-filter-item data-category="data analysis">
               <a href="#">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-2.png" alt="Data Analytics Platform" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Data Analytics Platform</h3>
-
                 <p class="project-category">Data Analysis</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="user research">
+            <li class="project-item active" data-filter-item data-category="user research">
               <a href="#">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-3.jpg" alt="User Research Study" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">User Research Study</h3>
-
                 <p class="project-category">User Research</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
               </a>
             </li>
 
           </ul>
-
         </section>
 
       </article>
-
-
-
-
 
       <!--
-        - #BLOG
+        - #SKILLS
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="skills" data-page="skills">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Skills</h2>
         </header>
 
-        <section class="blog-posts">
+        <section class="skill">
+          <ul class="skills-list content-card">
 
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Product Strategy</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Analysis & Visualization</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Customer Success & Account Management</h5>
+                <data value="88">88%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Tools & Technologies</h5>
+                <data value="92">92%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 92%;"></div>
+              </div>
             </li>
 
           </ul>
-
         </section>
 
       </article>
-
-
-
-
 
       <!--
         - #CONTACT
@@ -1150,23 +483,12 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
         <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Get In Touch</h3>
 
           <form action="#" class="form" data-form>
-
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
@@ -1176,9 +498,7 @@
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
 
       </article>
@@ -1186,11 +506,6 @@
     </div>
 
   </main>
-
-
-
-
-
 
   <!--
     - custom js link
@@ -1209,7 +524,7 @@
         console.log('Spline not loading, showing fallback');
         robotAvatar.style.display = 'none';
         const fallback = document.createElement('div');
-        fallback.innerHTML = '<img src="./assets/images/my-avatar.png" alt="Nishant Saini" width="80" style="border-radius: 50%;">';
+        fallback.innerHTML = '<img src="./assets/images/my-avatar.png" alt="Nishant Saini" width="120" style="border-radius: 50%;">';
         robotAvatar.parentNode.appendChild(fallback);
       }
     }, 3000);
