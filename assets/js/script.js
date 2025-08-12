@@ -1,6 +1,7 @@
 'use strict';
 
-
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -147,6 +148,9 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
+console.log('Navigation links found:', navigationLinks.length);
+console.log('Pages found:', pages.length);
+
 // Navigation mapping for updated page names
 const navigationMapping = {
   'about': 'about',
@@ -159,8 +163,10 @@ const navigationMapping = {
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    console.log('Navigation clicked:', this.innerHTML);
     const buttonText = this.innerHTML.toLowerCase().trim();
     const targetPage = navigationMapping[buttonText];
+    console.log('Button text:', buttonText, 'Target page:', targetPage);
     
     if (targetPage) {
       // Remove active class from all pages and links
@@ -169,11 +175,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
       
       // Add active class to target page and link
       const targetPageElement = document.querySelector(`[data-page="${targetPage}"]`);
+      console.log('Target page element:', targetPageElement);
       if (targetPageElement) {
         targetPageElement.classList.add("active");
         this.classList.add("active");
         window.scrollTo(0, 0);
+        console.log('Navigation successful!');
       }
     }
   });
 }
+
+}); // End of DOMContentLoaded
