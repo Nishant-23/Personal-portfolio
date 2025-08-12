@@ -44,7 +44,15 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <spline-viewer url="https://prod.spline.design/8cfb6748-f3dd-44dd-89fb-f46c7ab4186e/scene.splinecode" class="robot-avatar"></spline-viewer>
+          <iframe 
+            src="https://my.spline.design/8cfb6748-f3dd-44dd-89fb-f46c7ab4186e/" 
+            class="robot-avatar"
+            frameborder="0"
+            width="80"
+            height="80"
+            scrolling="no"
+            allowfullscreen>
+          </iframe>
         </figure>
 
         <div class="info-content">
@@ -1193,6 +1201,19 @@
     - Spline 3D Robot Background
   -->
   <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.490/build/spline-viewer.js"></script>
+  <script>
+    // Fallback if Spline doesn't load
+    setTimeout(() => {
+      const robotAvatar = document.querySelector('.robot-avatar');
+      if (robotAvatar && !robotAvatar.shadowRoot) {
+        console.log('Spline not loading, showing fallback');
+        robotAvatar.style.display = 'none';
+        const fallback = document.createElement('div');
+        fallback.innerHTML = '<img src="./assets/images/my-avatar.png" alt="Nishant Saini" width="80" style="border-radius: 50%;">';
+        robotAvatar.parentNode.appendChild(fallback);
+      }
+    }, 3000);
+  </script>
 
   <!--
     - ionicon link

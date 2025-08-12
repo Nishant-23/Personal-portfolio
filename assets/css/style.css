@@ -169,6 +169,8 @@ body {
   overflow: hidden;
   display: block;
   background: transparent;
+  border: none;
+  pointer-events: auto;
 }
 
 .avatar-box {
